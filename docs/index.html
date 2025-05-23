@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competições</title>
+    <style>
+
+        /* Header 1 */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        li, a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #header1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 2px 10%;
+            background-color: #202B52;
+        }
+
+        .logo {
+            cursor: pointer;
+            scale: 0.5;
+            margin-right: auto;
+        }
+
+        .nav-Links {
+            list-style: none;
+        }
+
+        .nav-Links li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav-Links li a {
+            transition: all 0.3 ease 0s;
+        }
+
+        .nav-Links li a:hover {
+            color: gray;
+        }
+
+        #botao-insc {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 9px 25px;
+            background-color: rgba(245, 172, 20, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3 ease 0s;
+            color: #202B52;
+            margin-left: 20px;
+        }
+
+        #botao-insc:hover {
+            background-color: rgba(245, 172, 20, 0.8);
+        }
+
+        body {
+          margin: 0;
+          height: 450vh; 
+        }
+
+        .primeira {
+            height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+        }
+
+        .primeira h1 {
+            font-size: 50px;
+            color: rgb(13, 3, 156);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .primeira button {
+            padding: 15px 80px;
+            background-color: rgba(245, 172, 20, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3 ease 0s;
+            color: #002555;
+            margin-left: 2px;
+            font-size: 30px;
+        }
+
+        .primeira button:hover {
+            background-color: rgba(245, 172, 20, 0.8);
+        }
+
+        .segunda {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to bottom, #0d1b3d, #2d52a3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 30px;
+            padding: 30px;
+            display: flex;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-section {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .text-section h2 {
+            margin-top: 0;
+            color: #0d1b3d;
+        }
+
+        .text-section p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .img-section {
+            flex: 1;
+            background-color: #2d52a3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            height: 200px;
+        }
+
+        .terceira {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(240, 197, 5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        }
+
+        .tcontainer {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .tcontainer h1 {
+            color: #1a1a3d;
+            margin-bottom: 40px;
+        }
+
+        .tcards {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .tcard {
+            background-color: white;
+            border-radius: 25px;
+            padding: 50px;
+            width: 400px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                text-align: left;
+        }
+
+        .tcard h3 {
+            margin-top: 0;
+            color: #1a1a3d;
+            font-size: 30px;
+        }
+
+        .tcard p {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .quarta {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .qconteiner {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .qconteiner h2 {
+        color: #1a1a3d;
+        margin-bottom: 40px;
+        font-size: 40px;
+        }
+
+        .patrocinadores {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+        }
+
+        .patrocinadores-box {
+        width: 300px;
+        height: 300px;
+        background-color: #3452a3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        }
+
+        
+        /* Footer */
+
+        footer {
+            background-color: #202B52;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+
+        .footer-Info {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        #copyright {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+      </style>
+    </head>
+</head>
+<body>
+    
+    <header id="header1">
+
+        <img src="imagens/LogoClara.svg" alt="Logo Cansat by Ibmec" class="logo">
+
+        <nav>
+
+            <ul class="nav-Links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="competicoes1.html">Competições</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+
+        <a class="cta" href="inscricao.html"><button id="botao-insc">Inscrição</button></a>
+
+    </header>
+
+    <main>
+
+        <section class="primeira">
+            <h1>LOREM IPSUM <br><a href="inscricao.html"><button>Inscreva-se já!</button></a>
+            </h1>
+        </section>
+
+        <section class="segunda">
+
+            <div class="card">
+
+                <div class="text-section">
+
+                    <h2>Sobre a competição</h2>
+                    <p>LoremLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non risus finibus, pretium nibh sed, finibus eros. Sed tempor consectetur leo sed ultrices. Integer dui nunc, volutpat eu nisl in, ultricies viverra nulla. Phasellus eu vestibulum ipsum. Mauris quis condimentum ipsum. Morbi fermentum tincidunt lorem, sit amet posuere ipsum aliquet in. Suspendisse felis lacus, tincidunt eu dui.</p>
+
+                </div>
+
+                <div class="img-section">
+                    IMG
+                </div>
+            </div>
+        </section>
+
+        <section class="terceira">
+            <div class="tcontainer">
+                <h1>Atualizações</h1>
+                <div class="tcards">
+                <div class="tcard">
+                    <h3>Lorem</h3>
+                    <p>LoremLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non risus finibus, pretium nibh sed, finibus eros. Sed tempor consectetur leo sed ultrices. Integer dui nunc, volutpat eu nisl in, ultricies viverra nulla. Phasellus eu vestibulum ipsum. Mauris quis condimentum ipsum.</p>
+                </div>
+                <div class="tcard">
+                    <h3>Lorem</h3>
+                    <p>LoremLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non risus finibus, pretium nibh sed, finibus eros. Sed tempor consectetur leo sed ultrices. Integer dui nunc, volutpat eu nisl in, ultricies viverra nulla. Phasellus eu vestibulum ipsum. Mauris quis condimentum ipsum.</p>
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="quarta">
+            <div class="qconteiner">
+                <h2>Patrocinadores</h2>
+                <div class="patrocinadores">
+                <div class="patrocinadores-box">IMG</div>
+                <div class="patrocinadores-box">IMG</div>
+                <div class="patrocinadores-box">IMG</div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-Info">
+            
+            <div>
+                <h2>Contato:</h2>
+                <p>
+                    Telefone: +5521998765432 <br>
+                    Email: empresa@gmail.com
+                </p>
+            </div>
+
+            <div>
+                <h2>Endereço:</h2>
+                <p>
+                    Av. Pedro da Silva Couto
+                </p>
+            </div>
+
+        </div>
+
+        <p id="copyright">&copy NomeDaEmpresa. Todos os direitos reservados.</p>
+
+    </footer>
+</body>
+</html>
+
