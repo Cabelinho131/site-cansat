@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header 1 */
+
+.nav-Items {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.amarelo-Items {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #202B52;
+}
+
+#header1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 10%;
+    background-color: #202B52;
+}
+
+#header1-amarelo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 10%;
+    background-color: #EFAB1A;
+}
+
+.logo {
+    cursor: pointer;
+    scale: 0.5;
+    margin-right: auto;
+}
+
+.nav-Links {
+    list-style: none;
+}
+
+.nav-Links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-Links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav-Links li a:hover {
+    color: gray;
+}
+
+#botao-insc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(245, 172, 20, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: #202B52;
+    margin-left: 20px;
+}
+
+#botao-insc:hover {
+    background-color: rgba(245, 172, 20, 0.8);
+}
+
+#amarelo-insc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(0, 37, 85, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: #EFAB1A;
+    margin-left: 20px;
+}
+
+#amarelo-insc:hover {
+    background-color: rgba(0, 37, 85, 0.8);
+}
+
+/* Header 2 */
+
+#header2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 10%;
+    background-color: #3754A1;
+}
+
+.botao-Comp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: #202B52;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -18px;
+}
+
+.link-Comp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+/* Main */
+
+.fundo-Branco {
+    background-color: white;
+    color: #202B52;
+    padding: 20px 60px;
+}
+
+.fundo-Amarelo {
+    background-color: #EFAB1A;
+    color: #202B52;
+    padding: 20px 60px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    padding-left: 30px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+#info-premios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#texto-premios {
+    padding-right: 300px;
+}
+
+/* Main Login */
+
+#fundo-inscricao {
+    background-image: url(imagens/fundoInscricao.svg);
+    display: flex;
+    justify-content: center;
+    color: #202B52;
+}
+
+#inscricao {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 17px 0px;
+}
+
+.inputs {
+    text-align: left;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+input {
+    padding-left: 18px;
+    font-size: 20px;
+    width: 330px;
+    height: 47px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: #EFAB1A;
+    color: #202B52;
+}
+
+#submit {
+    margin-top: 30px;
+    background-color: #3754A1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: white;
+    margin: 150px;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #202B52;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer-amarelo {
+    background-color: #EFAB1A;
+    color: #202B52;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-Info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 14px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}

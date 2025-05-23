@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header 1 */
+
+        .nav-Items {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .amarelo-Items {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            color: #202B52;
+        }
+
+        #header1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 2px 10%;
+            background-color: #202B52;
+        }
+
+        #header1-amarelo {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 2px 10%;
+            background-color: #EFAB1A;
+        }
+
+        .logo {
+            cursor: pointer;
+            scale: 0.5;
+            margin-right: auto;
+        }
+
+        .nav-Links {
+            list-style: none;
+        }
+
+        .nav-Links li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav-Links li a {
+            transition: all 0.3 ease 0s;
+        }
+
+        .nav-Links li a:hover {
+            color: gray;
+        }
+
+        #botao-insc {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 9px 25px;
+            background-color: rgba(245, 172, 20, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3 ease 0s;
+            color: #202B52;
+            margin-left: 20px;
+        }
+
+        #botao-insc:hover {
+            background-color: rgba(245, 172, 20, 0.8);
+        }
+
+        #amarelo-insc {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 9px 25px;
+            background-color: rgba(0, 37, 85, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3 ease 0s;
+            color: #EFAB1A;
+            margin-left: 20px;
+        }
+
+        #amarelo-insc:hover {
+            background-color: rgba(0, 37, 85, 0.8);
+        }
+
+        /* Resto */
+
+        body {
+          margin: 0;
+          height: 200vh; 
+        }
+
+        .primeira {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        
+        .text-section {
+            flex: 2;
+            margin-right: 50px;
+            margin-left: 40px;
+        }
+
+        .text-section h2 {
+            margin-top: 0;
+            color: #0d1b3d;
+            font-size: 40px
+        }
+
+        .text-section p {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .img-section {
+            flex: 1;
+            background-color: #2d52a3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            height: 300px;
+        }
+
+        .segunda {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background: #EFAB1A;
+        }
+
+        .qconteiner {
+        text-align: center;
+        padding: 50px 20px;
+        }
+
+        .qconteiner h2 {
+        color: #1a1a3d;
+        margin-bottom: 40px;
+        font-size: 40px;
+        }
+
+        .patrocinadores {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+        }
+
+        .patrocinadores-box {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #202B52;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 20px;
+        }
+
+        #footer-amarelo {
+            background-color: #EFAB1A;
+            color: #202B52;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .footer-Info {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        #copyright {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header1">
+
+        <img src="imagens/LogoClara.svg" alt="Logo Cansat by Ibmec" class="logo">
+
+        <nav>
+
+            <ul class="nav-Links">
+                <li class="nav-Items"><a href="home.html" class="nav-Items">Home</a></li>
+                <li class="nav-Items"><a href="competicoes1.html" class="nav-Items">Competições</a></li>
+                <li class="nav-Items"><a href="sobre.html" class="nav-Items">Sobre nós</a></li>
+            </ul>
+        </nav>
+
+        <a class="cta" href="inscricao.html"><button id="botao-insc">Inscrição</button></a>
+
+    </header>
+
+    <main>
+
+        <section class="primeira">
+            <div class="text-section">
+                <h2>Quem somos?</h2>
+                <p>LoremLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non risus finibus, pretium nibh sed, finibus eros. Sed tempor consectetur leo sed ultrices. Integer dui nunc, volutpat eu nisl in, ultricies viverra nulla. Phasellus eu vestibulum ipsum. Mauris quis condimentum ipsum. Morbi fermentum tincidunt lorem, sit amet posuere ipsum aliquet in. Suspendisse felis lacus, tincidunt eu dui.</p>
+            </div>
+            <div class="img-section">
+                IMG
+            </div>
+            </div>
+        </section>
+
+        <section class="segunda">
+            <div class="qconteiner">
+                <h2>Redes Sociais</h2>
+                <div class="patrocinadores">
+                <div class="patrocinadores-box"><a href=""><img src="imagens/LogoInstagram.svg" alt="nosso instagram" width="200"></a></div>
+                <div class="patrocinadores-box"><a href=""><img src="imagens/LogoFacebook.svg" alt="nosso facebook" width="200"></a></div>
+                <div class="patrocinadores-box"><a href=""><img src="imagens/LogoYoutube.svg" alt="nosso youtube" width="200"></a></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-Info">
+            
+            <div>
+                <h2>Contato:</h2>
+                <p>
+                    Telefone: +5521998765432 <br>
+                    Email: empresa@gmail.com
+                </p>
+            </div>
+    
+            <div>
+                <h2>Endereço:</h2>
+                <p>
+                    Av. Pedro da Silva Couto
+                </p>
+            </div>
+    
+        </div>
+    
+        <p id="copyright">&copy NomeDaEmpresa. Todos os direitos reservados.</p>
+    
+    </footer>
+</body>
+</html>
